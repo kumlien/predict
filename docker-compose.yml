@@ -1,0 +1,21 @@
+version: "3.4"
+
+services:
+    db:
+        image: postgres
+        environment:
+            POSTGRES_PASSWORD: XXX
+    fermion:
+        image: fermion
+        build:
+            context: .
+            dockerfile: Dockerfile
+        ports:
+            - "8000:8000"
+        depends_on:
+            - db
+        environment:
+            - DEBUG=TRUE
+        volumes:
+            - .:/app
+        command: python app.py
