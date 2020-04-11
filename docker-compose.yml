@@ -6,7 +6,7 @@ services:
         environment:
             POSTGRES_PASSWORD: XXX
     fermion:
-        image: fermion
+        image: predictor
         build:
             context: .
             dockerfile: Dockerfile

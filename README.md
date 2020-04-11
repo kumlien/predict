@@ -1,4 +1,6 @@
-## Welcome to GitHub Pages
+## Welcome to Predict - adventures with python, tensorflow and flask.
+
+Use pipenv to build (pipenv install)
 
 You can use the [editor on GitHub](https://github.com/kumlien/predict/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
