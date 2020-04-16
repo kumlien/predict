@@ -1,10 +1,7 @@
-from flask import Flask, render_template, url_for, flash, redirect
-from datetime import datetime
-from forms import RegistrationForm, LoginForm
-
-app = Flask(__name__)
-
-app.config['SECRET_KEY'] = 'a8916b4c43fa5d3629fe108c89c48992'
+from flask import render_template, url_for, flash, redirect
+from predict import app
+from predict.forms import RegistrationForm, LoginForm
+from predict.models import User, Post
 
 posts = [
     {
@@ -50,7 +47,3 @@ def login():
         else:
             flash('Login unsuccessful, check username and password', 'danger')
     return render_template('login.html', form=form, title='Login')
-
-
-if __name__ == '__main__':
-    app.run(debug=True)

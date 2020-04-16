@@ -1,6 +1,33 @@
-## Welcome to Predict - adventures with python, tensorflow and flask.
+# Welcome to Predict - adventures with python, tensorflow and flask
 
-Use pipenv to build (pipenv install)
+- Use pipenv to build: ```pipenv install```
+- To init db write this in your shell:
+
+```
+    from predict import db
+    db.create_all()
+```
+
+- To add some data:
+
+```
+    from predict import User, Post
+    user_1 = User(username='Svante', email='s@s.se', password='password')
+    db.session.commit()
+```
+
+- Verify that your db has some data in it:
+
+```
+    User.query.all()
+```
+
+- To clear your db from all data and tables:
+```
+    db.drop_all()
+ ```
+
+
 
 You can use the [editor on GitHub](https://github.com/kumlien/predict/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
@@ -10,7 +37,7 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
+```
 Syntax highlighted code block
 
 # Header 1
