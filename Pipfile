@@ -11,6 +11,8 @@ requests = "*"
 flask = "*"
 flask-wtf = "*"
 flask-sqlalchemy = "*"
+flask-bcrypt = "*"
+flask-login = "*"
 
 [dev-packages]
 pytest = "*"
