@@ -14,6 +14,8 @@ flask-sqlalchemy = "*"
 flask-bcrypt = "*"
 flask-login = "*"
 pillow = "*"
+flask-mail = "*"
+email-validator = "*"
 
 [dev-packages]
 pytest = "*"
