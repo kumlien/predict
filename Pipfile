@@ -20,3 +20,4 @@ email-validator = "*"
 [dev-packages]
 pytest = "*"
 pylint = "*"
+autopep8 = "*"
