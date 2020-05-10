@@ -30,8 +30,11 @@ def create_app(config_class=Config):
     from predict.users.routes import users
     from predict.posts.routes import posts
     from predict.main.routes import main
+    from predict.errors.handlers import errors #The Blueprint instance
+
     app.register_blueprint(users)
     app.register_blueprint(posts)
     app.register_blueprint(main)
+    app.register_blueprint(errors)
 
     return app

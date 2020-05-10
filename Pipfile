@@ -16,6 +16,7 @@ flask-login = "*"
 pillow = "*"
 flask-mail = "*"
 email-validator = "*"
+python-dotenv = "*"
 
 [dev-packages]
 pytest = "*"
