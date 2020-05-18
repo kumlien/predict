@@ -18,6 +18,8 @@ flask-mail = "*"
 email-validator = "*"
 python-dotenv = "*"
 flask-testing = "*"
+python-miio = "*"
+
 [dev-packages]
 pytest = "*"
 pylint = "*"
