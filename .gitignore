@@ -2,6 +2,7 @@
 predict/site.db
 predictor.code-workspace
 requirements.txt
+.history
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
