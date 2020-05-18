@@ -1,1 +1,6 @@
 FLASK_APP=predict
+
+EMAIL_USER=""
+EMAIL_PASS=""
+SECRET_KEY=""
+SQLALCHEMY_DATABASE_URI="sqlite:///site.db"

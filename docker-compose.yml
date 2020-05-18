@@ -5,17 +5,17 @@ services:
         image: postgres
         environment:
             POSTGRES_PASSWORD: XXX
-    fermion:
+    predictor:
         image: predictor
         build:
             context: .
             dockerfile: Dockerfile
         ports:
-            - "8000:8000"
+            - "5000:5000"
         depends_on:
             - db
         environment:
             - DEBUG=TRUE
         volumes:
             - .:/app
-        command: python app.py
+        command: python run.py
